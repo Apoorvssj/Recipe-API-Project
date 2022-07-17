@@ -15,9 +15,9 @@ class CommandTests(SimpleTestCase):
     """Test commands."""
 
     def test_wait_for_db_ready(self, patched_check):
-        """patched_check is the mock version 
-        of check method(used to check database status) , 
-        patched_check is only available because we 
+        """patched_check is the mock version
+        of check method(used to check database status) ,
+        patched_check is only available because we
         used patch decorator to mock a method i.e. check"""
         """Test waiting for database if database ready."""
         patched_check.return_value = True
